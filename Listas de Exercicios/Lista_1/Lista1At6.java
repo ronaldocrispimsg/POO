@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Lista1At5 {
+public class Lista1At6 {
         public static void main (String[] args) {
             Scanner scan = new Scanner(System.in);
 
@@ -14,11 +14,13 @@ public class Lista1At5 {
             
             int[] vetorDiv3 = new int[4];
             for(int i = 0; i < vetorLength; i++){
-                int resto = vetor[i] % 2;
-                if(resto == 0){
+                int resto = vetor[i];
+                if(resto % 2 == 0){
                     System.out.println("Numero divisivel por 2");
+                }else if(resto % 3 == 0){
+                    System.out.println("Numero divisivel por 3");
                 }else{
-                    System.out.println("Numero nao e divisivel por 2");
+                    System.out.println("Nao divisivel por 2 ou 3");
                 }
                 
             }
@@ -34,6 +36,6 @@ public class Lista1At5 {
             for(int i = 0; i < vetorLength; i++){
                 System.out.println("String: " + vetorDiv3[i]);                
             }  
-             
+
         }
 }
